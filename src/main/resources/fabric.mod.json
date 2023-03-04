@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "coordwriter",
+  "version": "${version}",
+
+  "name": "Coordwriter",
+  "description": "Writes coords. Hit 'b' or your keybind in controls. Also has '/stwrite' which converts into a Skytils import & '/clearfile' which clears the file. File path is at config > coords.txt",
+  "authors": [
+    "Ninjune"
+  ],
+  "contact": {
+    "homepage": "https://ninjune.dev/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.ninjune.coordwriter.CoordWriter"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17",
+    "fabric-key-binding-api-v1": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
