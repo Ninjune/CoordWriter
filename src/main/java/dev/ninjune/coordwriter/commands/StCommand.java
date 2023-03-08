@@ -41,7 +41,7 @@ public class StCommand {
                             String data = scanner.nextLine();
                             String[] splitData = data.split(" ");
                             unencodedStImportString += "{\"name\": \"" + index++ + "\",\"x\": " + splitData[0] +
-                                    ",\"y\": " + splitData[1] + ",\"z\": " + splitData[2] + ",enabled:" +
+                                    ",\"y\": " + splitData[1] + ",\"z\": " + splitData[2] + ",\"enabled\":" +
                                     " \"true\",\"color\": 16711680,\"addedAt\": 1666700977214},";
                         }
                         unencodedStImportString = StringUtils.chop(unencodedStImportString);
